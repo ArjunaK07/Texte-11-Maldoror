@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
     <style>
         body{
             background-color: #282828;
             display: block;
         }
 h1 {
-  color: rgb(255, 84, 84);
-  background-color: rgb(255, 206, 80);
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(255,  84,  84);
+  background-color: rgb(255,  206,  80);
+  font-family:Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
   text-align: center;
 }
 
 .navigation{
 border-radius: 5px; height: 50px;
 }
+
 .navigation_bar{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -28,28 +29,21 @@ border-radius: 5px; height: 50px;
 }
 
 .page{
-  background-color: rgb(57, 57, 57);
-  margin-left: 0px;
-  margin-right: 0px;
+  background-color: rgb(57,  57,  57);
+  margin-left: 250px;
+  margin-right: 250px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 10px;
 }
-@media screen and (min-width:750px) {
-            .page {
-               margin-left: 250px;
-               margin-right: 250px;
-               margin-top: 0px;
-               margin-bottom: 0px;
-            }
-        }
+
 .intro{
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
 color: coral; 
 font-size: 25px;
 }
 p{
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Times New Roman',  Times,  serif;
     font-size: 30px;
 }
 img{
@@ -58,32 +52,25 @@ img{
 .img2{
     height: 300px;
 }
-.div1{
-grid-column: 1;
-grid-row: 1;
-margin-left: 0px;
-margin-top: 10px;
-}
-.div2{
-width: 400px;
-padding-right: 20px;
-}
+
 .titre{
-  color: rgb(255, 133, 93);
-  background-color: rgb(2, 100, 186);
+  color: rgb(255,  133,  93);
+  background-color: rgb(2,  100,  186);
   padding: 5px;
   font-weight: bold;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana,  Geneva,  Tahoma,  sans-serif;
 }
 .texte{
-  color:aliceblue
+  color:aliceblue;
+  font-family:'Times New Roman',  Times,  serif;
+  font-size: 25px;
 }
 .légende{
   color: bisque;
   font-weight: bold;
 }
 .outro{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
   font-size: 25px;
   color: crimson;
 }
@@ -93,15 +80,13 @@ padding-right: 20px;
   color: aqua; 
   background-color: coral; 
   font-weight: bold; 
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS',  'Lucida Sans Unicode',  'Lucida Grande',  'Lucida Sans',  Arial,  sans-serif;
 }
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
-  text-align: center;
-  height: 30px; 
-  font-family:'Times New Roman', Times, serif;
+  text-align: justify;
+  font-family:'Times New Roman',  Times,  serif;
   font-size: 25px;
   border: none;
   border-radius: 5px;
@@ -109,50 +94,49 @@ padding-right: 20px;
   background-color: whitesmoke;
   color: brown;
   font-weight: bold;
+  margin: 3px;
+  padding: 3px;
+
 }
 
 .tooltip .tooltiptext {
-  vertical-align: center;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
   visibility: hidden;
-  width: 750px;
-  background-color: #555;
+  background-color: rgb(80, 80, 80);
   color: #fff;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext2 {
-  vertical-align: center;
+  padding: 15px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
-  visibility: hidden;
-  width: 750px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  min-width: 500px;
+  max-width: 550px;
   left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
+	transform: translateX(-25%);
+  justify-content: center;
 }
 
+.div1{
+width: auto;
+height: auto;
+position: static;
+padding: 5px;
+}
+img {
+  height: 150px;
+  width: auto;
+}
+.div2{
+min-width: 500px;
+max-width: 550px;
+height: auto;
+position: static;
+margin-top: 10px ;
+
+}
 .tooltip .tooltiptext::after {
   position: absolute;
   top: 100%;
@@ -161,11 +145,13 @@ padding-right: 20px;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+  opacity: 0.4;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+
 }
 .logo_akatsuki{
   height: 50px;
@@ -173,7 +159,7 @@ padding-right: 20px;
 }
 .OUTRO
 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
     font-size: 20px;
     color: aliceblue;
 }
@@ -182,13 +168,57 @@ padding-right: 20px;
   grid-template-columns: 3em 9fr ;
   grid-gap: 10px;
 }
-.div2{
+
+.outro_div{
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 5px;
   width: 100%;
 }
 
+@media screen and (max-width:750px) {
+            .page {
+               margin-left: 0px;
+               margin-right: 0px;
+               margin-top: 0px;
+               margin-bottom: 0px;
+            }
+            .tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: rgb(80, 80, 80);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  max-width: 250px;
+  left: 50%;
+	transform: translateX(-25%);
+}
 
+.div1{
+width: 300px;
+max-height: 300px;
+position: static;
+padding: 5px;
+}
+img{
+  max-width: 250px;
+  max-height: 150px;
+}
+.div2{
+max-width: 250px;
+height: auto;
+position: static;
+margin-top: 10px ;
+background-color: aquamarine;
+
+}
+}
     </style>
 
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"/>
@@ -262,25 +292,25 @@ padding-right: 20px;
                      III/ (l.15-22) Une attitude menaçante </br>
           </p>
 
- <p class="texte">
+ <div class="texte">
 
-<button class="tooltip"> Vous ne savez pas, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Marque de l'énonciation pronom « Vous » distance entre l'énonciateur Maldoror (« Je ») et le lecteur, les humains. postulat premier : "Vous ne savez pas ... je vais vous le dire" qui souligne l'ignorance des hommes et le savoir « supérieur » que Maldoror est prêt à leur dispenser.  </div></span></button> 
+<div class="tooltip"> Vous ne savez pas, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Marque de l'énonciation pronom « Vous » distance entre l'énonciateur Maldoror (« Je ») et le lecteur, les humains. postulat premier : "Vous ne savez pas ... je vais vous le dire" qui souligne l'ignorance des hommes et le savoir « supérieur » que Maldoror est prêt à leur dispenser.  </div></span></div> 
 
-<button class="tooltip"> vous autres, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'apostrophe « vous autres » apporte une certaine agressivité. </div></span></button>
+<div class="tooltip"> vous autres, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'apostrophe « vous autres » apporte une certaine agressivité. </div></span></div>
 
 pourquoi 
 
-<button class="tooltip"> ils ne dévorent pas les os de votre tête, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Esthétique classique détournée et inversée : Platon prônait le beau, le texte propose le laid : « ils ne dévorent pas les os de votre tête » nihilisme, nouvelle poésie du langage </div></span></button> 
+<div class="tooltip"> ils ne dévorent pas les os de votre tête, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Esthétique classique détournée et inversée : Platon prônait le beau, le texte propose le laid : « ils ne dévorent pas les os de votre tête » nihilisme, nouvelle poésie du langage </div></span></div> 
 
 et 
 
-<button class="tooltip"> qu’ils se contentent d’extraire, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Il se contente d'en extraire [...] la quintessence » Antithèse ironique et absurde, incohérence logique </div></span></button> 
+<div class="tooltip"> qu’ils se contentent d’extraire, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Il se contente d'en extraire [...] la quintessence » Antithèse ironique et absurde, incohérence logique </div></span></div> 
 
 avec leur pompe, 
 
-<button class="tooltip"> la quintessence de votre sang. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Il se contente d'en extraire [...] la quintessence » Antithèse ironique et absurde, incohérence logique </div></span></button> 
+<div class="tooltip"> la quintessence de votre sang. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Il se contente d'en extraire [...] la quintessence » Antithèse ironique et absurde, incohérence logique </div></span></div> 
 
-<button class="tooltip"> Attendez un instant, je vais vous le dire : <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> (« Je ») et le lecteur, les humains. postulat premier : "Vous ne savez pas ... je vais vous le dire" qui souligne l'ignorance des hommes et le savoir « supérieur » que Maldoror est prêt à leur dispenser. Registre Didactique = impératif « Attendez un instant, je vais vous le dire » Ce texte semble une parodie de discours scientifique sur le pou, truisme « c'est parce qu'ils n'en ont pas la force ». </div></span></button> 
+<div class="tooltip"> Attendez un instant, je vais vous le dire : <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> (« Je ») et le lecteur, les humains. postulat premier : "Vous ne savez pas ... je vais vous le dire" qui souligne l'ignorance des hommes et le savoir « supérieur » que Maldoror est prêt à leur dispenser. Registre Didactique = impératif « Attendez un instant, je vais vous le dire » Ce texte semble une parodie de discours scientifique sur le pou, truisme « c'est parce qu'ils n'en ont pas la force ». </div></span></div> 
 
 c’est parce qu’ils n’en ont pas la force. 
 
@@ -288,117 +318,119 @@ c’est parce qu’ils n’en ont pas la force.
 
 Soyez certains que, 
 
-<button class="tooltip"> si leur mâchoire était conforme à la mesure de leurs vœux infinis, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> personnification ironique et absurde du pou qui a une conscience </div></span></button> 
+<div class="tooltip"> si leur mâchoire était conforme à la mesure de leurs vœux infinis, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> personnification ironique et absurde du pou qui a une conscience </div></span></div> 
 
-<button class="tooltip"> la cervelle, la rétine des yeux, la colonne vertébrale, tout votre corps y passerait. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> énumération lexique du corps torturé par la dévoration = horreur dénoncée ? </div></span></button> 
+<div class="tooltip"> la cervelle, la rétine des yeux, la colonne vertébrale, tout votre corps y passerait. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> énumération lexique du corps torturé par la dévoration = horreur dénoncée ? </div></span></div> 
 
-<button class="tooltip"> Comme une goutte d’eau. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Comparaison du corps à « une goutte d'eau ». exagération comique, humour noir </div></span></button> 
+<div class="tooltip"> Comme une goutte d’eau. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Comparaison du corps à « une goutte d'eau ». exagération comique, humour noir </div></span></div> 
 
-<button class="tooltip" style="background-color: burlywood; color: rgb(3, 79, 82);"> Sur la tête d’un jeune mendiant <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Antithèse ironique et absurde, incohérence logique, humour; Registre Pathétique : « jeune mendiant » incohérence logique </div></span></button> 
+<div class="tooltip" style="background-color: burlywood; color: rgb(3, 79, 82);"> Sur la tête d’un jeune mendiant <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Antithèse ironique et absurde, incohérence logique, humour; Registre Pathétique : « jeune mendiant » incohérence logique </div></span></div> 
 
 des rues, 
 
-<button class="tooltip"> observez, avec un microscope, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> mode verbal impératif recommandation bienveillante </div></span></button> 
+<div class="tooltip"> observez, avec un microscope, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> mode verbal impératif recommandation bienveillante </div></span></div> 
 
-<button class="tooltip" style="background-color: burlywood; color: rgb(3, 79, 82);"> un pou qui travaille ; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Antithèse ironique et absurde, incohérence logique, humour; Registre Pathétique : « jeune mendiant » incohérence logique </div></span></button> 
+<div class="tooltip" style="background-color: burlywood; color: rgb(3, 79, 82);"> un pou qui travaille ; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Antithèse ironique et absurde, incohérence logique, humour; Registre Pathétique : « jeune mendiant » incohérence logique </div></span></div> 
 
-<button class="tooltip"> vous m’en donnerez des nouvelles. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> complaisance dans l'évocation du pou anthropophage et de sa cruauté. « Vous m'en donnerez des nouvelles » formule réservée à quelque chose de positif; </div></span></button> 
+<div class="tooltip"> vous m’en donnerez des nouvelles. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> complaisance dans l'évocation du pou anthropophage et de sa cruauté. « Vous m'en donnerez des nouvelles » formule réservée à quelque chose de positif; </div></span></div> 
 
-<button class="tooltip"> Malheureusement ils sont petits, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> regret qu'ils ne soient plus imposants = ils auraient été plus redoutables. </div></span></button> 
+<div class="tooltip"> Malheureusement ils sont petits, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> regret qu'ils ne soient plus imposants = ils auraient été plus redoutables. </div></span></div> 
 
-<button class="tooltip"> ces brigands de la longue chevelure. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Registre Héroïcomique = traitement noble d'un sujet bas : « brigands de la longue chevelure » personnification avec épithète homérique (expansion des noms dans les épopées d'Homère) Décalage étrange et comique en lien avec la peur </div></span></button> 
+<div class="tooltip"> ces brigands de la longue chevelure. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Registre Héroïcomique = traitement noble d'un sujet bas : « brigands de la longue chevelure » personnification avec épithète homérique (expansion des noms dans les épopées d'Homère) Décalage étrange et comique en lien avec la peur </div></span></div> 
 
 </br> </br>
 
-<button class="tooltip"> Ils ne seraient pas bons pour être conscrits ; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> personnification ironique et absurde du pou qui a une conscience </div></span></button> 
+<div class="tooltip"> Ils ne seraient pas bons pour être conscrits ; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> personnification ironique et absurde du pou qui a une conscience </div></span></div> 
 
 car, 
 
-<button class="tooltip"> ils n’ont pas la taille nécessaire exigée par la loi. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> truisme absurde </div></span></button> 
+<div class="tooltip"> ils n’ont pas la taille nécessaire exigée par la loi. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> truisme absurde </div></span></div> 
 
 Ils appartiennent au 
 
-<button class="tooltip"> monde lilliputien <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> référence aux Voyages de Gulliver de Swift, être très petits que le héros croise, référence fictionnelle contradictoire avec la précision réaliste de la conscription </div></span></button> 
+<div class="tooltip"> monde lilliputien <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> référence aux Voyages de Gulliver de Swift, être très petits que le héros croise, référence fictionnelle contradictoire avec la précision réaliste de la conscription </div></span></div> 
 
 de ceux de la courte cuisse, et 
 
-<button class="tooltip"> les aveugles n’hésitent pas à les ranger parmi les infiniment petits. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Syllepse ironique et absurde, incohérence logique « les aveugles n'hésitent pas à les ranger parmi les infiniment petits ». Jeu sur le sens propre et figuré du mot « aveugle ». </div></span></button> 
+<div class="tooltip"> les aveugles n’hésitent pas à les ranger parmi les infiniment petits. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Syllepse ironique et absurde, incohérence logique « les aveugles n'hésitent pas à les ranger parmi les infiniment petits ». Jeu sur le sens propre et figuré du mot « aveugle ». </div></span></div> 
 
 Malheur au cachalot qui se battrait contre un pou. 
 
-<button class="tooltip"> Il serait dévoré en un clin d’œil, malgré sa taille. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> hyperbole absurde. Exagération comique, humour noir </div></span></button> 
+<div class="tooltip"> Il serait dévoré en un clin d’œil, malgré sa taille. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> hyperbole absurde. Exagération comique, humour noir </div></span></div> 
 
-<button class="tooltip" style="background-color: darksalmon; color:darkgreen;">  Il ne resterait pas la queue <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> « il ne resterait pas la queue » du cachalot, lexique du corps torturé par la dévoration = horreur; Synecdoque ironique et absurde de la queue du cachalot qui va « annoncer la nouvelle » </div></span></button> 
+<div class="tooltip" style="background-color: darksalmon; color:darkgreen;">  Il ne resterait pas la queue <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> « il ne resterait pas la queue » du cachalot, lexique du corps torturé par la dévoration = horreur; Synecdoque ironique et absurde de la queue du cachalot qui va « annoncer la nouvelle » </div></span></div> 
 
 pour aller 
 
-<button class="tooltip" style="background-color: darksalmon; color:darkgreen;"> annoncer la nouvelle. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> « il ne resterait pas la queue » du cachalot, lexique du corps torturé par la dévoration = horreur; Synecdoque ironique et absurde de la queue du cachalot qui va « annoncer la nouvelle » </div></span></button> 
+<div class="tooltip" style="background-color: darksalmon; color:darkgreen;"> annoncer la nouvelle. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> « il ne resterait pas la queue » du cachalot, lexique du corps torturé par la dévoration = horreur; Synecdoque ironique et absurde de la queue du cachalot qui va « annoncer la nouvelle » </div></span></div> 
 
-<button class="tooltip"> L’éléphant se laisse caresser. Le pou, non. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2">  Antithèse ironique et absurde, incohérence logique = un éléphant reste plus dangereux qu'un pou, </div></span></button> 
+<div class="tooltip"> L’éléphant se laisse caresser. Le pou, non. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2">  Antithèse ironique et absurde, incohérence logique = un éléphant reste plus dangereux qu'un pou, </div></span></div> 
 
-<button class="tooltip"> Je ne vous conseille pas de tenter cet essai périlleux. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> précision inutile, fausse bienveillance </div></span></button> 
+<div class="tooltip"> Je ne vous conseille pas de tenter cet essai périlleux. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> précision inutile, fausse bienveillance </div></span></div> 
 
 </br> </br>
 
-<button class="tooltip"> Gare à vous, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> menace à l'impératif </div></span></button> 
+<div class="tooltip"> Gare à vous, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> menace à l'impératif </div></span></div> 
 
 si votre 
 
-<button class="tooltip" style="background-color: aquamarine; color:blue;"> main <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> champ lexical du corps dévoré, horreur </div></span></button> 
+<div class="tooltip" style="background-color: aquamarine; color:blue;"> main <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> champ lexical du corps dévoré, horreur </div></span></div> 
 
 est poilue, ou que seulement elle soit composée 
 
-<button class="tooltip" style="background-color: aquamarine; color:blue;"> d’os <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> champ lexical du corps dévoré, horreur </div></span></button> 
+<div class="tooltip" style="background-color: aquamarine; color:blue;"> d’os <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> champ lexical du corps dévoré, horreur </div></span></div> 
 
 et 
 
-<button class="tooltip" style="background-color: aquamarine; color:blue;"> de chair. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> champ lexical du corps dévoré, horreur </div></span></button> 
+<div class="tooltip" style="background-color: aquamarine; color:blue;"> de chair. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> champ lexical du corps dévoré, horreur </div></span></div> 
 
 C’en est fait de vos 
 
-<button class="tooltip" style="background-color: aquamarine; color:blue;"> doigts. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> champ lexical du corps dévoré, horreur </div></span></button> 
+<div class="tooltip" style="background-color: aquamarine; color:blue;"> doigts. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> champ lexical du corps dévoré, horreur </div></span></div> 
 
 Ils   
-<button class="tooltip"> craqueront <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> futur prophétique et imprécatoire. L'emploi du futur rend l'avertissement de Maldoror menaçant puisqu'il annonce la souffrance à venir comme certaine. Mise en garde ironique qui provoque le lecteur; poux = bourreau Exagération comique, hyperbole, humour noir </div></span></button> 
+<div class="tooltip"> craqueront <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> futur prophétique et imprécatoire. L'emploi du futur rend l'avertissement de Maldoror menaçant puisqu'il annonce la souffrance à venir comme certaine. Mise en garde ironique qui provoque le lecteur; poux = bourreau Exagération comique, hyperbole, humour noir </div></span></div> 
 
 comme s’ils étaient à la torture.
 
-<button class="tooltip"> La peau disparaît par un étrange enchantement. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Antithèse péjoratif mélioratif : ironie absurde, incohérence logique </div></span></button> 
+<div class="tooltip"> La peau disparaît par un étrange enchantement. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Antithèse péjoratif mélioratif : ironie absurde, incohérence logique </div></span></div> 
 
 Les poux sont incapables de 
 
 
-<button class="tooltip"> commettre autant de mal <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> personnification du pou en être conscient et sadique, concession dans leur dangerosité pour en accentuer la cruauté </div></span></button> 
+<div class="tooltip"> commettre autant de mal <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> personnification du pou en être conscient et sadique, concession dans leur dangerosité pour en accentuer la cruauté </div></span></div> 
 
 
 que leur imagination en médite. Si vous trouvez un pou dans votre route, 
 
-<button class="tooltip"> passez votre chemin, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Impératif mises en garde comme des menaces. 1.24-25 = gradation dans l'attitude inquiétante de Maldoror </div></span></button> 
+<div class="tooltip"> passez votre chemin, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Impératif mises en garde comme des menaces. 1.24-25 = gradation dans l'attitude inquiétante de Maldoror </div></span></div> 
 
 et 
 
-<button class="tooltip"> ne lui léchez pas les papilles de la langue. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> situation ironique absurde </div></span></button> 
+<div class="tooltip"> ne lui léchez pas les papilles de la langue. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> situation ironique absurde </div></span></div> 
 
 </br> </br>
 
-<button class="tooltip"> Il vous arriverait quelque accident. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> conditionnel présent, hypothèse face à laquelle le point de vue de l'énonciateur est ambigu et ironique = euphémisme rassurant ou litote menaçante. </div></span></button> 
+<div class="tooltip"> Il vous arriverait quelque accident. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> conditionnel présent, hypothèse face à laquelle le point de vue de l'énonciateur est ambigu et ironique = euphémisme rassurant ou litote menaçante. </div></span></div> 
 
-<button class="tooltip" style="background-color:darkolivegreen; color:coral;"> Cela s’est vu. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Esthétique classique détournée et inversée : Platon prônait le vrai, le texte propose le faux. Un homme n'a jamais léché les papilles de la langue d'un pou. nihilisme, nouvelle poésie du langage </div></span></button> 
+<div class="tooltip" style="background-color:darkolivegreen; color:coral;"> Cela s’est vu. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Esthétique classique détournée et inversée : Platon prônait le vrai, le texte propose le faux. Un homme n'a jamais léché les papilles de la langue d'un pou. nihilisme, nouvelle poésie du langage </div></span></div> 
 
 N’importe,
 l'énonciateur semble se moquer de l'impact de son discours sur le lecteur et de l'absence de logique des différents registres.
 
-<button class="tooltip" style="background-color:darkolivegreen; color:coral;"> je suis déjà content de la quantité de mal <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Esthétique classique détournée et inversée : Platon prônait le vrai, le texte propose le faux. Un homme n'a jamais léché les papilles de la langue d'un pou. nihilisme, nouvelle poésie du langage </div></span></button> 
+<div class="tooltip" style="background-color:darkolivegreen; color:coral;"> je suis déjà content de la quantité de mal <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Esthétique classique détournée et inversée : Platon prônait le vrai, le texte propose le faux. Un homme n'a jamais léché les papilles de la langue d'un pou. nihilisme, nouvelle poésie du langage </div></span></div> 
 
 qu’il te fait, 
 
-<button class="tooltip"> ô race humaine ; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'apostrophe semble ironiquement solennelle, respectueuse mais distante. </div></span></button> 
+<div class="tooltip"> ô race humaine ; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'apostrophe semble ironiquement solennelle, respectueuse mais distante. </div></span></div> 
 
 seulement, 
 
-<button class="tooltip"> je voudrais qu’il t’en fît davantage. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> sadisme explicite de cette fin de paragraphe, l'énonciateur se dévoile complètement après avoir manipulé le lecteur; de la bienveillance à la menace. Sarcasme de la moquerie blessante et cynisme du refus des valeurs par la destruction de l'altruisme prôné au début. Brouillage du message pour le lecteur qui ne sait pas si on veut le faire rire, lui faire peur, le dégoûter ... = mélange des registres. </div></span></button> 
+<div class="tooltip"> je voudrais qu’il t’en fît davantage. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> sadisme explicite de cette fin de paragraphe, l'énonciateur se dévoile complètement après avoir manipulé le lecteur; de la bienveillance à la menace. Sarcasme de la moquerie blessante et cynisme du refus des valeurs par la destruction de l'altruisme prôné au début. Brouillage du message pour le lecteur qui ne sait pas si on veut le faire rire, lui faire peur, le dégoûter ... = mélange des registres. </div></span></div> 
 
-<p class="légende">
+</div>
+ 
+ <p class="légende">
 Les Chants de Maldoror, Lautréamont, 1869, chant deuxième 
   </p>
 
@@ -426,9 +458,9 @@ Les Chants de Maldoror, Lautréamont, 1869, chant deuxième
 </p>
     </p>
 
- <button class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
+ <div class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
     Procédés Littéraires et Stylistiques = 20
-</button>
+</div>
 
 </br></br>
 
@@ -450,11 +482,11 @@ Il vous arriverait quelque accident. Cela s’est vu. N’importe, je suis déj�
 
     <div class="source">
 
-      <div class="div1">
+      <div class="intro_div">
         <a href="https://arjunak07.github.io/Accueil-Premiere/"> <img class="logo_akatsuki" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"> </a>
       </div>
     
-      <div class="div2">
+      <div class="outro_div">
         <span class="OUTRO">
           FAIT PAR L'AKATSUKI DES CODEURS, PROPULSÉ PAR LE LYCÉE ANDRÉ MALRAUX
         </span>
